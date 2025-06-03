@@ -6,8 +6,9 @@ phases:
       nodejs: 14
     commands:
       - echo Installing Hugo...
-      - wget https://github.com/gohugoio/hugo/releases/download/v0.111.3/hugo_extended_0.111.3_Linux-64bit.deb
-      - sudo dpkg -i hugo_extended_0.111.3_Linux-64bit.deb
+      - wget https://github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_linux-amd64.tar.gz
+      - tar -xzf hugo_extended_0.124.1_linux-amd64.tar.gz
+      - mv hugo /usr/local/bin/hugo
   build:
     commands:
       - echo Building the Hugo site...
