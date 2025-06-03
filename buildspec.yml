@@ -2,16 +2,22 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 14
     commands:
-      - apt-get update
-      - apt-get install -y hugo
+      - echo Installing Hugo...
+      - wget https://github.com/gohugoio/hugo/releases/download/v0.111.3/hugo_extended_0.111.3_Linux-64bit.deb
+      - sudo dpkg -i hugo_extended_0.111.3_Linux-64bit.deb
   build:
     commands:
+      - echo Building the Hugo site...
       - hugo
   post_build:
     commands:
+      - echo Build completed. Syncing to S3...
       - aws s3 sync public/ s3://portfolio-site-6/ --delete
-
 artifacts:
   files:
     - '**/*'
+  base-directory: public
+
