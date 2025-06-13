@@ -1,8 +1,8 @@
-/* Reset & Base */
+/* scroll-bar's display is not there */
 ::-webkit-scrollbar{
   display: none;
 }
-
+/*overall body*/
 body {
   margin: 0;
   background-color: #ffffff;
@@ -10,6 +10,8 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+/* Top Bar */
 
 
 a {
@@ -28,7 +30,6 @@ li a{
   text-decoration-color: #000;
 }
 
-/* Top Bar */
 .top-bar {
   background-color: #007d32;
   font-size: 1rem;
@@ -37,7 +38,7 @@ li a{
   text-align: center;
 }
 
-/* Header Navigation */
+/* navbar */
 .main-header {
   padding: 15px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -190,7 +191,7 @@ li a{
 }
 
 
-/*animation*/
+/*animation when hover*/
 
 @keyframes appear {
 from{
