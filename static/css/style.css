@@ -20,10 +20,7 @@ a {
   color: #ffffff;
 }
 
-li a{
-  color: rgb(0, 0, 0);
-  transition: 0.5s;
-}
+
 
 .line:hover{
   text-decoration:underline;
@@ -45,6 +42,10 @@ li a{
   margin-top: 20px;
 }
 
+li a{
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
 .logo-nav-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -191,7 +192,7 @@ li a{
 }
 
 
-/*animation when hover*/
+/*animation when hover on methadology section*/
 
 @keyframes appear {
 from{
